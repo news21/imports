@@ -1,0 +1,81 @@
+{
+  "bounds": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "center": [
+    -35.13838195800871,
+    34.05265942137482,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "countries",
+    "template_teaser": "<h1>[NAME]</h1>\n<p>$[FTotal]M</p>\n<img src=\"https://chart.googleapis.com/chart?cht=lc&chs=200x125&chds=a&chxl=2:02|03|04|05|06|07|08|09|10|&chd=t:[y2002],[y2003],[y2004],[y2005],[y2006],[y2007],[y2008],[y2009],[y2010]&chxt=x,y\">\n",
+    "template_full": "<h1>[NAME]</h1>\n<p>$[FTotal]M</p>\n<img src=\"https://chart.googleapis.com/chart?cht=lc&chs=200x125&chds=a&chxl=2:02|03|04|05|06|07|08|09|10|&chd=t:[y2002],[y2003],[y2004],[y2005],[y2006],[y2007],[y2008],[y2009],[y2010]&chxt=x,y\">\n",
+    "template_location": ""
+  },
+  "minzoom": 1,
+  "maxzoom": 9,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "id": "country_underlay",
+      "name": "country_underlay",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/mng/Documents/TileMill/data/omg_final.zip",
+        "id": "country_underlay",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "importrefusals"
+      }
+    },
+    {
+      "geometry": "raster",
+      "id": "relief",
+      "name": "relief",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/mng/Documents/TileMill/data/SR_HR_mercator_lanczos_grayscale.tif",
+        "id": "relief",
+        "srs": "",
+        "project": "importrefusals"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/mng/Documents/TileMill/data/omg_final.zip",
+        "id": "countries",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "importrefusals"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "id": "country_names",
+      "name": "country_names",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.3.0/cultural/10m-admin-0-map-units.zip",
+        "id": "country_names",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "importrefusals"
+      }
+    }
+  ],
+  "name": "Imports"
+}
